@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+body {
+
+	background:linear-gradient(#323839,#212526);
+    background-image: url("bg.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+
+main {
+	height: 450px;
+    width:100%
+    color: blue;
+    border-radius: 25px;
+    }
+.headers    {
+    opacity: 0.5;
+    border-radius: 50px;
+    padding: 25px 0;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    width: 100px;
+	height: 50px;    
+    color: #a4a3a3;
+	background:linear-gradient(#323839,#212526);
+    transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+    }
+#home{
+        background-image:  url("home.png");
+    }
+#home:hover{ 
+    transform:translate(0px, 10px);-webkit-transform:translate(0px, 10px);box-shadow:3px 7px 5px black;
+    display: block;
+    background-image: url("header.gif");
+    background-size:     cover;
+    opacity:0.5;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    color: white;
+    background-color: 	#A9A9A9;
+    cursor: pointer;
+    
+}
+#profile{
+        background-image:  url("profile.png");
+    }
+#profile:hover{ 
+    transform:translate(0px, 10px);-webkit-transform:translate(0px, 10px);box-shadow:3px 7px 5px black;
+    display: block;
+    background-image: url("header.gif");
+    background-size:     cover;
+    opacity:0.5;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    color: white;
+    background-color: 	#A9A9A9;
+    cursor: pointer;
+    
+}
+#search{
+        background-image:  url("search.png");
+    }
+#search:hover{ 
+    transform:translate(0px, 10px);-webkit-transform:translate(0px, 10px);box-shadow:3px 7px 5px black;
+    display: block;
+    background-image: url("header.gif");
+    background-size:     cover;
+    opacity:0.5;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    color: white;
+    background-color: 	#A9A9A9;
+    cursor: pointer;
+    
+}
+.image    {
+    
+    opacity:0.8;
+    background-image:  url("image.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    padding: 25px 0;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    width: 100px;
+	height: 50px;    
+    color: #a4a3a3;
+    }
+#out    {
+    background-image:  url("out.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    padding: 25px 0;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    width: 100px;
+	height: 50px;    
+    color: #a4a3a3;
+    }
+#out:hover{ 
+    transform:translate(0px, 10px);-webkit-transform:translate(0px, 10px);box-shadow:3px 7px 5px black;
+    display: block;
+    background-image: url("header.gif");
+    background-size:     cover;
+    opacity:0.5;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    color: white;
+    background-color: 	#A9A9A9;
+    cursor: pointer;
+    
+}
+#post{
+    
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 790px;
+    padding-left: 10px;
+    
+    padding-top: 10px;
+    
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color:#434b4c;
+    
+	background:linear-gradient(#cbcecf,#a9aeaf);
+}
+/* .#headers i{line-height:70px;}
+.facebook:hover{transform:translate(-10px, 0px);-webkit-transform:translate(-10px, 0px);box-shadow:1px 5px 3px grey;
+	font-size:40px;}
+.facebook:active{box-shadow:3px 10px 3px #1a58c1;} */
+.headers:hover{ 
+    transform:translate(0px, 10px);-webkit-transform:translate(0px, 10px);box-shadow:3px 7px 5px black;
+    display: block;
+    background-image: url("header.gif");
+    background-size:     cover;
+    opacity:0.8;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    border-radius: 50px;
+    color: white;
+    background-color: 	#A9A9A9;
+    cursor: pointer;
+    
+}
+.name    {
+    border-radius: 25px;
+    padding: 25px 0;
+    float: left;
+    text-align: center;
+    color: white;
+    width: 700px;
+	height: 50px;
+    }
+
+#sidebar    {
+    opacity:0.8;
+    border-radius: 25px;
+    padding: 25px 0;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    width: 200px;
+	height: 370px;
+	background:linear-gradient(#323839,#212526);
+    }
+#mainposts    {
+    opacity:0.7;
+    padding: 25px 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;    
+    text-align: center;
+    overflow-y: auto;
+    width: 845px;
+	height: 370px;
+
+    }
+    
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}    
+#ads  {
+    border-radius: 25px;
+    
+    opacity:0.8;
+    padding: 25px 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+    text-align: center;
+    width: 200px;
+	height: 370px;
+    
+	background: #494847;
+    }
+.facebook{
+    float: left;
+	width:60px;
+	height:60px;
+	margin-left: 25px;
+    
+	margin-right: 13px;
+	border:1px solid #dedede;
+	text-align:center;
+	display:block;
+	background:linear-gradient(#1a58c1,#2769da);
+	color:#fff;
+	font-size:30px;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	cursor:pointer;	
+	border-radius:5px;	
+}
+.facebook i{line-height:70px;}
+.facebook:hover{transform:translate(-10px, 0px);-webkit-transform:translate(-10px, 0px);box-shadow:1px 5px 3px grey;
+	font-size:40px;}
+.facebook:active{box-shadow:3px 10px 3px #1a58c1;}
+
+.twitter{
+    
+    float: left;
+	width:60px;
+	height:60px;
+    margin-left: 13px;
+    
+	margin-right: 20px;
+	border:1px solid #dedede;
+	text-align:center;
+	display:block;
+	background:linear-gradient(#0084b4, #00aced);
+	color:#fff;
+	font-size:30px;
+	transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	cursor:pointer;	
+	border-radius:5px;	
+}
+.twitter i{line-height:70px;}
+.twitter:hover{transform:translate(-10px, 0px);-webkit-transform:translate(-10px, 0px);box-shadow:1px 5px 3px grey;
+    
+	font-size:40px;}
+.twitter:active{box-shadow:3px 10px 3px #1a58c1;}
+
+</style>
+
+</head>
+<body>
+
+<h1>
+    <div class="headers" id="home">
+    </div>
+    <div class="headers" id="profile">
+    </div>
+    <div class="headers" id="search">
+    </div>
+    <div class="name">
+        Aaron Louie Lagazon
+    </div>
+    <div class="image">
+        </div>
+        <div class="headers" id="out">
+            </div>
+</h1>
+
+<main>
+        <div id="sidebar">
+                Sidebar
+            </div>
+        </div>
+        <div id="mainposts">
+                <div id="post">
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark 
+                </div>
+                <div id="post">
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark 
+                </div>
+                <div id="post">
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark 
+                </div>
+                <div id="post">
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark 
+                </div>
+                <div id="post">
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark 
+                </div>
+                <div id="post">
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark doo doo, doo doo doo doo
+                        Baby Shark
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark doo doo, doo doo doo doo
+                        Mummy Shark
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark doo doo, doo doo doo doo
+                        Daddy Shark
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark doo doo, doo doo doo doo
+                        Grandma Shark
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark doo doo, doo doo doo doo
+                        Grandpa Shark 
+                </div>
+                
+            </div>
+        </div>
+        <div id="ads">
+                <div class="facebook">
+                        <i class="socialmedia">f</i>
+                    </div>
+            <div class="twitter">
+                    <i class="socialmedia">tw</i>
+                </div>
+        </div>
+
+    </main>
+</html>
